@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 180px; padding: 10px; font-family: sans-serif; text-align: center; }
+    .store-icon { width: 64px; height: 64px; margin-bottom: 10px; }
+    button { 
+      width: 100%; padding: 10px; cursor: pointer; border: none; border-radius: 5px;
+      font-weight: bold; color: white; margin-bottom: 8px; transition: 0.2s;
+      font-size: 12px; /* 少し文字を調整 */
+    }
+    .on { background-color: #1da1f2; }
+    .off { background-color: #666; }
+    /* 分析モード用の色（緑系にすると区別しやすいです） */
+    .ana-on { background-color: #2e7d32; } 
+    .ana-off { background-color: #546e7a; }
+    
+    h4 { margin: 0 0 10px 0; font-size: 14px; color: #333; }
+  </style>
+</head>
+<body>
+  <h4>X Simple Mode</h4>
+  <button id="toggleBtn">読み込み中...</button>
+  <button id="scrollBtn">スクロール: ---</button>
+  <button id="anaBtn">分析モード: ---</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
